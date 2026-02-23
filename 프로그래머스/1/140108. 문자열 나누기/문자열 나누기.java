@@ -18,11 +18,11 @@ class Solution {
                 index = i+1;
                 cnt1 = 0;
                 cnt2 = 0;
-            }
-            if(cnt1!=cnt2 && i==length-1) {
-                answer++;
-            }
-            
+            }           
+        }
+        
+        if(cnt1 != 0 || cnt2 != 0) {
+            answer++;
         }
         return answer;
     }
