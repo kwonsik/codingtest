@@ -4,12 +4,10 @@ class Solution {
     public int[] solution(int[] progresses, int[] speeds) {
         int[] answer = {};
         boolean finish[] = new boolean[progresses.length];
-        int cnt = 0;
         int index = 0;
         Stack<Integer> stack = new Stack<>();
         Stack<Integer> stack2 = new Stack<>();
         while(true) {   
-            cnt++;
             // 일 진행
             for(int i=0; i<progresses.length; i++) {
                 progresses[i] += speeds[i];
