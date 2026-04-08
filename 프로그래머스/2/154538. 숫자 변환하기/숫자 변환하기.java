@@ -10,9 +10,18 @@ class Solution {
             Iterator<Integer> iterator = set.iterator();
             while(iterator.hasNext()) {
 	            int temp = iterator.next();
-                set2.add(temp + n);
-                set2.add(temp * 2);
-                set2.add(temp * 3);
+                int a = temp + n;
+                int b = temp * 2;
+                int c = temp * 3;
+                if(!set.contains(a)) {
+                    set2.add(a);
+                }
+                if(!set.contains(b)) {
+                    set2.add(b);
+                }
+                if(!set.contains(c)) {
+                    set2.add(c);
+                }
             }
             set = set2;
             // set의 모든 요소가 y보다 크면 break;
